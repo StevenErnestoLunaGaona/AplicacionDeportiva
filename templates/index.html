@@ -1,29 +1,206 @@
- <!doctype html>
+{%  extends 'base.html' %}
 
-<head>
+{% block titulo %}
+    SportApp
+{% endblock %}
 
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+{% block contenido %}
 
-<link rel="stylesheet" href="/menu.css">
+    <p> </p>
 
-<title>Ejemplo de menu 1</title></head>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Calendario</button>
 
-<body >
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Calendario</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
 
-<nav class="menu">
-
-    <ul>
-
-    <li><a href="/urldelapagina">Inicio</a></li>
-        <li><a href="/ urldelapagina ">Pagina 1</a></li>
-
-        <li><a href="/ urldelapagina ">Pagina 2</a></li>
-
-        <li><a href="/ urldelapagina ">Pagina 3</a></li>
-
-    </ul>
-
+      <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">JULIO</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
 </nav>
 
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">LU</th>
+      <th scope="col">MA</th>
+      <th scope="col">MI</th>
+      <th scope="col">JU</th>
+      <th scope="col">VI</th>
+      <th scope="col">SA</th>
+      <th scope="col">DO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">30</th>
+      <th scope="row">1</th>
+      <th scope="row">2</th>
+      <th scope="row">3</th>
+      <th scope="row">4</th>
+      <th scope="row">5</th>
+      <th scope="row">6</th>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <th scope="row">8</th>
+      <th scope="row">9</th>
+      <th scope="row">10</th>
+      <th scope="row">11</th>
+      <th scope="row">12</th>
+      <th scope="row">13</th>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <th scope="row">15</th>
+      <th scope="row">16</th>
+      <th scope="row">17</th>
+      <th scope="row">18</th>
+      <th scope="row">19</th>
+      <th scope="row">20</th>
+    </tr>
+      <tr>
+      <th scope="row">21</th>
+      <th scope="row">22</th>
+      <th scope="row">23</th>
+      <th scope="row">24</th>
+      <th scope="row">25</th>
+      <th scope="row">26</th>
+      <th scope="row">27</th>
+    </tr>
+      <tr>
+      <th scope="row">28</th>
+      <th scope="row">29</th>
+      <th scope="row">30</th>
+      <th scope="row">31</th>
+      <th scope="row">1</th>
+      <th scope="row">2</th>
+      <th scope="row">3</th>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
 
-</body></html>
+    <p> </p>
+    <h2>Noticias</h2>
+    <p> </p>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lionel Messi podría realizar su debut como titular en Inter Miami ante Atlanta United</h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">El Tribunal Federal Suizo desestimó apelación de Byron Castillo</h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Paolo Guerrero entrenó por primera vez con Liga de Quito</h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <p> </p>
+    <h2>Deportes</h2>
+    <p> </p>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Seleccione un Deporte</option>
+      <option value="1">Futbol</option>
+      <option value="2">Basquetbol</option>
+      <option value="3">Ajedrez</option>
+      <option value="4">Ping Pong</option>
+    </select>
+    <p> </p>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Temporadas
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <dl>
+            <dt>Temporada 1</dt>
+            <dd>Descripcion de la temporada 1</dd>
+            <dt>Temporada 2</dt>
+            <dd>Descripcion de la temporada 2</dd>
+            <dt>Temporada 3</dt>
+            <dd>Descripcion de la temporada 3</dd>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Competencias
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <dl>
+            <dt>Competencia 1</dt>
+            <dd>Descripcion de la competencia 1</dd>
+            <dt>Competencia 2</dt>
+            <dd>Descripcion de la competencia 2</dd>
+            <dt>Competencia 3</dt>
+            <dd>Descripcion de la competencia 3</dd>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Partidos
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+            <dl>
+                <dt>Partido 1</dt>
+                <dd>Descripcion del partido 1</dd>
+                <dt>Partido 2</dt>
+                <dd>Descripcion del partido 2</dd>
+                <dt>Partido 3</dt>
+                <dd>Descripcion del partido 3</dd>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
