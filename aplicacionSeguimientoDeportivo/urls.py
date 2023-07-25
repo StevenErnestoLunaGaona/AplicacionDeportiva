@@ -26,4 +26,6 @@ urlpatterns = [
     path('/basquetbol', views.basquetbol, name='basquetbol'),
     path('/ajedrez', views.ajedrez, name='ajedrez'),
     path('/pingpong', views.pingpong, name='pingpong'),
+    path('/noticia', views.noticia, name='noticia'),
+    path('/calendario', views.calendario, name='calendario'),
 ]
