@@ -12,7 +12,7 @@
 <h1 class="text-center">DEZZ | SportApp</h1>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{% url 'home' %}">
             <img src="images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             DEZZ
         </a>
@@ -20,10 +20,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">        
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Deportes
@@ -38,13 +35,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Calendario</a>
+                    <a class="nav-link" href="{% url 'calendario' %}">Calendario</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'noticia' %}">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'calendario' %}">Contactanos</a>
+                    <a class="nav-link" href="#">Contactanos</a>
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
