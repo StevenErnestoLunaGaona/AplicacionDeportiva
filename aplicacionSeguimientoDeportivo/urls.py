@@ -28,4 +28,5 @@ urlpatterns = [
     path('/pingpong', views.pingpong, name='pingpong'),
     path('/noticia', views.noticia, name='noticia'),
     path('/calendario', views.calendario, name='calendario'),
+    path('/about', views.about, name='about'),
 ]
