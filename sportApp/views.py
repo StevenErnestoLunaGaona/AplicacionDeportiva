@@ -15,3 +15,9 @@ def ajedrez(request):
 
 def pingpong(request):
     return render(request, 'pingpong.html')
+
+def noticia(request):
+    return render(request, 'noticia.html')
+
+def calendario(request):
+    return render(request, 'calendario.html')
