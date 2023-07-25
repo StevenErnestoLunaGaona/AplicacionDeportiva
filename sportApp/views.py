@@ -21,3 +21,6 @@ def noticia(request):
 
 def calendario(request):
     return render(request, 'calendario.html')
+
+def about(request):
+    return render(request, 'about.html')
