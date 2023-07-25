@@ -17,6 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from sportApp import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+    path('/futbol', views.futbol, name='futbol'),
+    path('/basquetbol', views.basquetbol, name='basquetbol'),
+    path('/ajedrez', views.ajedrez, name='ajedrez'),
+    path('/pingpong', views.pingpong, name='pingpong'),
 ]
